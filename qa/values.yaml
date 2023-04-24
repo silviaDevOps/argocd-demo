@@ -21,11 +21,11 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod-dns01
     acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: argocd-stage.awsinspire.com
+    - host: argocd-qa.awsinspire.com
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls: 
-  - secretName: argocd-stage
+  - secretName: argocd-qa
      hosts:
-       - argocd-stage.awsinspire.com
+       - argocd-qa.awsinspire.com
