@@ -5,6 +5,7 @@
 replicaCount: 5
 
 
+
 image:
   repository: nginx
   pullPolicy: IfNotPresent
